@@ -1,2 +1,7 @@
-# landing-page-portfolio
-layot of portfolio landing page
+Верстка макета лендинга с использованием HTML+CSS по макету.
+
+Реализовано:
+
+-Верстка самого макета путем Desktop first;
+-Сделан адаптив под мобильные устройства;
+-С помощью CSS сделано интерактивное hamburger menu;
