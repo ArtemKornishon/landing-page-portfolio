@@ -1,24 +1,29 @@
-@font-face {
+
+
+  @font-face {
     font-family: "Gilroy-bold";
-    src: url("../fonts/Gilroy-bold.eot"); 
-    src: url("../fonts/Gilroy-bold.eot?#iefix") format("embedded-opentype");
-    src: url("../fonts/Gilroy-bold.woff2") format("woff2");
-    src: ("../fonts/gilroy-bold.woff");
-    src: url("../fonts/gilroy-bold.svg#gilroy-medium") format("svg");
-    font-weight: 500;
-    font-style: normal;
+    font-style: bold;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Gilroy-bold"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/gilroy-bold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/gilroy-bold.woff") format("woff");
   }
   
+  
+
   @font-face {
     font-family: "Gilroy-medium";
-    src: url("../fonts/gilroy-medium.eot");
-    src: url("../fonts/gilroy-medium.eot?#iefix") format("embedded-opentype");
-    src: url("../fonts/gilroy-medium.woff2") format("woff2");
-    src: ("../fonts/gilroy-medium.woff");
-    src: url("../fonts/gilroy-medium.svg#gilroy-medium") format("svg");
-    font-weight: 500;
-    font-style: normal;
-}
+    font-style: medium;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Gilroy-medium"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/gilroy-medium.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/gilroy-medium.woff") format("woff");
+  }
+  
 
 :root {
     --fontsize-content: 18px;
